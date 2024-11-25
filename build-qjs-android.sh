@@ -16,10 +16,10 @@ ninja -C armv7 qjs  && ninja -C arm64 qjs  && ninja -C i386 qjs  && ninja -C x86
 
 mkdir -p napi/libs/armeabi-v7a && mkdir -p napi/libs/arm64-v8a && mkdir -p napi/libs/x86 && mkdir -p napi/libs/x86_64
 
-cp armv7/obj/lib{hermes,qjs}.so napi/libs/armeabi-v7a
-cp arm64/obj/lib{hermes,qjs}.so napi/libs/arm64-v8a
-cp i386/obj/lib{hermes,qjs}.so napi/libs/x86
-cp x86_64/obj/lib{hermes,qjs}.so napi/libs/x86_64
+cp armv7/obj/lib{qjs}.so napi/libs/armeabi-v7a
+cp arm64/obj/lib{qjs}.so napi/libs/arm64-v8a
+cp i386/obj/lib{qjs}.so napi/libs/x86
+cp x86_64/obj/lib{qjs}.so napi/libs/x86_64
 
 
 cp -r include napi
