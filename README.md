@@ -9,6 +9,11 @@ JavaScript 值，概念和操作通常映射到 ECMA-262 语言规范，API 具�
 4. 所有 JavaScript 值都抽象在一个名为 NAPIValue 的不透明类型后面。
 5. 如果出现 NAPIExceptionPendingException 说明出现 JS 异常，可以通过 napi_get_and_clear_last_exception 获取，或通过 NAPIClearLastException 清除
 
+## 初始化git submodule
+
+1. git submodule init
+2. git submodule update
+
 ## 代码静态分析
 
 ### JavaScriptCore
