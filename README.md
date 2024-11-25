@@ -74,6 +74,8 @@ JavaScript 值，概念和操作通常映射到 ECMA-262 语言规范，API 具�
 
 ### Android 动态库
 
+首先，需要将BUILDCONFIG.gn文件所配置的ndk_path修改为你本机上Andoird NDK安装路径
+
 1. `gn gen armv7 --args="build_android=true cross_compile_target=\"armv7\""`
 2. `gn gen arm64 --args="build_android=true cross_compile_target=\"arm64\""`
 3. `gn gen i386 --args="build_android=true cross_compile_target=\"i386\""`
